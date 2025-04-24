@@ -8,3 +8,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
+
+.image-of-myself {
+    width: 10%;
+}
