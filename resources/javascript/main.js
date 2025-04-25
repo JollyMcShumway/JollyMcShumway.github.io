@@ -3,19 +3,16 @@ let itemTwo = document.getElementById('first-project-image');
 let itemThree = document.getElementById('second-project');
 let itemFour = document.getElementById('second-project-image');
 let itemFive = document.getElementById('third-project');
-let itemSix = document.getElementById(' third-project-image');
+let itemSix = document.getElementById('third-project-image');
 
-function showItem() {
-    itemTwo.style.display = 'block';
+function toggleItem(imgElement) {
+    if (imgElement.style.display === 'block') {
+        imgElement.style.display = 'none';
+    } else {
+        imgElement.style.display = 'block';
+    }
 }
-itemOne.addEventListener('mousedown', showItem);
 
-function showItemTwo() {
-    itemFour.style.display = 'block';
-}
-itemThree.addEventListener('mousedown', showItemTwo);
-
-function showItemThree() {
-    itemSix.style.display = 'block';
-}
-itemFive.addEventListener('mousedown', showItemThree);
+itemOne.addEventListener('mousedown', () => toggleItem(itemTwo));
+itemThree.addEventListener('mousedown', () => toggleItem(itemFour));
+itemFive.addEventListener('mousedown', () => toggleItem(itemSix));
