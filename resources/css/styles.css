@@ -102,3 +102,24 @@ footer {
     padding-top: 3%;
     text-align: center;
 }
+
+.contact-main {
+    width: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon li {
+    display: inline;
+    padding-right: 3%;
+    list-style: none;
+}
+
+.gmail-icon {
+    width: 2.8%;
+}
+
+.github-icon {
+    width: 2.5%;
+}
